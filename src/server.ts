@@ -4,6 +4,7 @@ import { readFileSync, writeFileSync } from "fs";
 import path from 'path';
 
 const booksPath = path.join(__dirname, 'books.json');
+console.log(booksPath);
 const books = JSON.parse(readFileSync(booksPath, 'utf-8'));
 
 console.log(books);
@@ -59,5 +60,5 @@ app.delete("/api/books/:id", (req, res) => {
   }
 });
 app.listen(PORT, () => {
-  console.log(`Server is running on XXXXXXXXXXXXXXXX:${PORT}`);
+  console.log(`Server is running 3000:${PORT}`);
 });  
